@@ -55,7 +55,7 @@ import android.widget.Toast;
 /**
  * 
  * @类名称：BaseActivity
- * @包名：com.websharp.mix.activity
+ * @包名：com.websharp.mix.activity 
  * @描述： TODO
  * @创建人： dengzh
  * @创建时间:2014-12-10 下午4:45:02
