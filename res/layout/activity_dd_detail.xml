@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg_common" >
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/widget_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_title"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/layout_title"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dip" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:background="@drawable/bg_detail"
+                        android:orientation="vertical"
+                        android:paddingBottom="5dip" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_common_title"
+                            android:background="@drawable/bg_detail_top"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="2.5dip"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="7dip"
+                                android:layout_marginLeft="10dip"
+                                android:layout_marginTop="7dip"
+                                android:background="@android:color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dip"
+                                android:text="订单信息"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/textsize_title" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_common_item"
+                            android:gravity="center"
+                            android:layout_marginTop="5dip"
+                            android:orientation="horizontal"
+                            android:paddingLeft="5dip"
+                            android:paddingRight="5dip" 
+                            android:visibility="gone">
+
+                            <TextView
+                                style="@style/TextView_Layout_Detail_Title"
+                                android:layout_weight="3"
+                                android:text="名称" />
+
+                            <TextView style="@style/TextView_Layout_Detail_Split" />
+
+                            <TextView
+                                style="@style/TextView_Layout_Detail_Title"
+                                android:layout_weight="5"
+                                android:text="内容" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_dd_items"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingLeft="5dip"
+                            android:paddingRight="5dip" >
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_product"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:background="@drawable/bg_detail"
+                        android:orientation="vertical"
+                        android:paddingBottom="5dip" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_common_title"
+                            android:background="@drawable/bg_detail_top"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="2.5dip"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="7dip"
+                                android:layout_marginLeft="10dip"
+                                android:layout_marginTop="7dip"
+                                android:background="@android:color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dip"
+                                android:text="订单产品信息"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/textsize_title" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_common_item"
+                            android:gravity="center"
+                            android:layout_marginTop="5dip"
+                            android:orientation="horizontal"
+                            android:paddingLeft="5dip"
+                            android:paddingRight="5dip" >
+
+                            <TextView
+                                style="@style/TextView_Layout_Detail_Title"
+                                android:layout_weight="3"
+                                android:text="套餐名称" />
+
+                            <TextView style="@style/TextView_Layout_Detail_Split" />
+
+                            <TextView
+                                style="@style/TextView_Layout_Detail_Title"
+                                android:layout_weight="3"
+                                android:text="产品名称" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_order_info_items"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingLeft="5dip"
+                            android:paddingRight="5dip" >
+                        </LinearLayout>
+                    </LinearLayout>
+
+                     <LinearLayout
+                        android:id="@+id/layout_resource"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:background="@drawable/bg_detail"
+                        android:orientation="vertical"
+                        android:paddingBottom="5dip" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_common_title"
+                            android:background="@drawable/bg_detail_top"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="2.5dip"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="7dip"
+                                android:layout_marginLeft="10dip"
+                                android:layout_marginTop="7dip"
+                                android:background="@android:color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dip"
+                                android:text="资源信息"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/textsize_title" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_common_item"
+                            android:gravity="center"
+                            android:layout_marginTop="5dip"
+                            android:orientation="horizontal"
+                            android:paddingLeft="5dip"
+                            android:paddingRight="5dip" >
+
+                         
+                            <TextView
+                                style="@style/TextView_Layout_Detail_Title"
+                                android:layout_weight="4"
+                                android:text="资源名称" />
+
+                            <TextView style="@style/TextView_Layout_Detail_Split" />
+
+                               <TextView
+                                style="@style/TextView_Layout_Detail_Title"
+                                android:layout_weight="2"
+                                android:text="资源编号" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_resource_info_items"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingLeft="5dip"
+                            android:paddingRight="5dip"
+                            android:orientation="vertical" >
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_fee"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:background="@drawable/bg_detail"
+                        android:orientation="vertical"
+                        android:paddingBottom="5dip"
+                        android:visibility="gone" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_common_title"
+                            android:background="@drawable/bg_detail_top"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <ImageView
+                                android:layout_width="2.5dip"
+                                android:layout_height="match_parent"
+                                android:layout_marginBottom="7dip"
+                                android:layout_marginLeft="10dip"
+                                android:layout_marginTop="7dip"
+                                android:background="@android:color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dip"
+                                android:text="订单受理费用信息"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/textsize_title" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_common_item"
+                            android:gravity="center"
+                            android:layout_marginTop="5dip"
+                            android:orientation="horizontal"
+                            android:paddingLeft="5dip"
+                            android:paddingRight="5dip" >
+
+                            <TextView
+                                style="@style/TextView_Layout_Detail_Title"
+                                android:layout_weight="3"
+                                android:text="科目名称" />
+
+                            <TextView style="@style/TextView_Layout_Detail_Split" />
+
+                            <TextView
+                                style="@style/TextView_Layout_Detail_Title"
+                                android:layout_weight="2"
+                                android:text="应收金额" />
+
+                            <TextView style="@style/TextView_Layout_Detail_Split" />
+
+                            <TextView
+                                style="@style/TextView_Layout_Detail_Title"
+                                android:layout_weight="2"
+                                android:text="减免金额" />
+
+                            <TextView style="@style/TextView_Layout_Detail_Split" />
+
+                            <TextView
+                                style="@style/TextView_Layout_Detail_Title"
+                                android:layout_weight="2"
+                                android:text="实收金额" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_fee_info_items"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/border"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="gone" >
+    </FrameLayout>
+
+</RelativeLayout>

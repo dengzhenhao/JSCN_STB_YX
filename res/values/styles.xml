@@ -1,0 +1,84 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="TextView_Common_Label">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:textColor">@color/color_text_title</item>
+        <item name="android:textSize">@dimen/textsize_layout_detail_title</item>
+        <item name="android:gravity">center_vertical|right</item>
+    </style>
+
+    <style name="TextView_Common_Value">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_weight">6</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/color_text_title</item>
+        <item name="android:textSize">@dimen/textsize_common_item</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <style name="TextView_Layout_Detail">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/textsize_layout_detail_title</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TextView_Layout_Detail_Title" parent="TextView_Layout_Detail">
+        <item name="android:background">#99CEDDED</item>
+        <item name="android:textColor">@color/color_text_title</item>
+        <item name="android:textSize">@dimen/textsize_list_title</item>
+    </style>
+
+    <style name="TextView_Layout_Detail_Item" parent="TextView_Layout_Detail">
+        <item name="android:textColor">@color/color_text_title</item>
+        <item name="android:textSize">@dimen/textsize_list_item</item>
+    </style>
+
+    <style name="TextView_Layout_Detail_Split">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/color_border</item>
+    </style>
+    
+    <style name="TextView_Payment_Info_Label">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">5</item>
+        <item name="android:textColor">@color/color_text_title</item>
+        <item name="android:textSize">@dimen/textsize_list_title</item>
+        <item name="android:gravity">center_vertical|right</item>
+    </style>
+
+    <style name="TextView_Payment_Info_Value">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_weight">12</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/color_text_title</item>
+        <item name="android:textSize">@dimen/textsize_list_title</item>
+        <item name="android:gravity">center_vertical|left</item>
+    </style>
+
+    <declare-styleable name="ptr_show_more_head">
+        <attr name="show_more_head" format="boolean" />
+    </declare-styleable>
+</resources>

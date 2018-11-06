@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/bg_detail"
+        android:orientation="vertical"
+        android:paddingBottom="5dip" >
+
+        <RelativeLayout
+            android:id="@+id/layout_year"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_common_title"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="5dip" >
+
+            <TextView
+                android:id="@+id/tv_year"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="选择年度:"
+                android:textColor="@color/color_system"
+                android:textSize="@dimen/textsize_title" />
+
+            <Spinner
+                android:id="@+id/sp_year"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@+id/tv_year"
+                android:background="@drawable/bg_detail"
+                android:gravity="center"
+                android:paddingLeft="20dip"
+                android:textAlignment="center"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="10dip"
+                android:layout_height="10dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="3dip"
+                android:layout_marginRight="10dip"
+                android:background="@drawable/icon_arrow_down" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_common_item"
+            android:layout_marginTop="5dip"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip" >
+
+            <TextView
+                style="@style/TextView_Layout_Detail_Title"
+                android:layout_weight="4"
+                android:text="营业厅" />
+
+            <TextView style="@style/TextView_Layout_Detail_Split" />
+            <TextView
+                style="@style/TextView_Layout_Detail_Title"
+                android:layout_weight="3"
+                android:text="操作人" />
+
+            <TextView style="@style/TextView_Layout_Detail_Split" />
+
+            <TextView
+                style="@style/TextView_Layout_Detail_Title"
+                android:layout_weight="4"
+                android:text="受理业务" />
+
+            <TextView style="@style/TextView_Layout_Detail_Split" />
+
+            <TextView
+                style="@style/TextView_Layout_Detail_Title"
+                android:layout_weight="4"
+                android:text="创建日期" />
+        </LinearLayout>
+
+        <!-- 订购信息列表 -->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:id="@+id/layout_order_info_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip" >
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

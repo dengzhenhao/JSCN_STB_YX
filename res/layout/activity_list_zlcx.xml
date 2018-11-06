@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:websharp="http://schemas.android.com/apk/res/com.websharp.stb"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg_common"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/widget_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dip"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:layout_weight="10"
+                android:paddingBottom="7dip"
+                android:paddingRight="10dip"
+                android:paddingTop="7dip" >
+
+                <EditText
+                    android:id="@+id/et_keyword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="36dip"
+                    android:background="@drawable/shape_list_item_common"
+                    android:hint="资源号"
+                    android:maxLength="30"
+                    android:paddingLeft="30dip"
+                    android:paddingRight="5dip"
+                    android:saveEnabled="true"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textColorHint="#e0e0e0"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_search_keyword"
+                    android:layout_width="fill_parent"
+                    android:layout_height="36dip"
+                    android:background="@drawable/shape_list_item_common"
+                    android:hint="客户证号/机顶盒号/智能卡号"
+                    android:maxLength="30"
+                    android:paddingLeft="30dip"
+                    android:paddingRight="5dip"
+                    android:saveEnabled="true"
+                    android:singleLine="true"
+                    android:text="aaaaa"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="#e0e0e0"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="18dip"
+                    android:layout_height="18dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="7dip"
+                    android:layout_marginTop="7dip"
+                    android:src="@drawable/icon_search" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/btn_qr"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_weight="1"
+                android:src="@drawable/icon_qr" />
+        </LinearLayout>
+        
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:background="@drawable/bg_btn_system"
+            android:gravity="center"
+            android:text="快速查询"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_common_btn_big" >
+        </Button>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/bg_detail"
+            android:orientation="vertical"
+            android:padding="5dip" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="@dimen/height_common_title"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tv_year"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="开始:"
+                        android:textColor="@color/color_system"
+                        android:textSize="@dimen/textsize_title" />
+
+                    <TextView
+                        android:id="@+id/tv_start_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dip"
+                        android:layout_toRightOf="@+id/tv_year"
+                        android:background="@drawable/bg_detail"
+                        android:focusable="false"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="10dip"
+                        android:textAlignment="center"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:layout_width="10dip"
+                        android:layout_height="10dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="3dip"
+                        android:layout_marginRight="10dip"
+                        android:background="@drawable/icon_arrow_down" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dip"
+                    android:layout_height="@dimen/height_common_title"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/tv_month"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dip"
+                        android:gravity="center"
+                        android:text="截止:"
+                        android:textColor="@color/color_system"
+                        android:textSize="@dimen/textsize_title" />
+
+                    <!--
+                     <Spinner
+                    android:id="@+id/sp_end_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toRightOf="@+id/tv_month"
+                    android:background="@drawable/bg_detail"
+                    android:gravity="center"
+                    android:paddingLeft="10dip"
+                    android:textAlignment="center"
+                    android:visibility="visible" />
+                    -->
+
+                    <TextView
+                        android:id="@+id/tv_end_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dip"
+                        android:layout_toRightOf="@+id/tv_month"
+                        android:background="@drawable/bg_detail"
+                        android:focusable="false"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="10dip"
+                        android:textAlignment="center"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:layout_width="10dip"
+                        android:layout_height="10dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="3dip"
+                        android:layout_marginRight="10dip"
+                        android:background="@drawable/icon_arrow_down" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_common_item"
+                android:layout_marginTop="5dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/TextView_Layout_Detail_Title"
+                    android:layout_weight="4"
+                    android:text="业务名称" />
+
+                <TextView style="@style/TextView_Layout_Detail_Split" />
+
+                <TextView
+                    style="@style/TextView_Layout_Detail_Title"
+                    android:layout_weight="3"
+                    android:text="提交人" />
+
+                <TextView style="@style/TextView_Layout_Detail_Split" />
+
+                <TextView
+                    style="@style/TextView_Layout_Detail_Title"
+                    android:layout_weight="4"
+                    android:text="时间" />
+            </LinearLayout>
+
+            <com.websharp.widget.PullRefreshListView
+                android:id="@+id/lv_info"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@null"
+                android:dividerHeight="0dip"
+                android:drawSelectorOnTop="false"
+                android:fadingEdgeLength="0.0sp"
+                android:fastScrollEnabled="false"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none"
+                websharp:show_more_head="false" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

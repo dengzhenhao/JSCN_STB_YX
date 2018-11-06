@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.websharp.stb"
+    android:versionCode="17"
+    android:versionName="@string/app_versionName" >
+
+    <!-- 1  1.0 	by dengzh 20180516 -->
+    <!-- 2  1.1 	by dengzh 20180531 -->
+    <!-- 3  1.1.1 	by dengzh 20180612 -->
+    <!-- 4  1.2 	by dengzh 20180613 -->
+    <!-- 5  1.2.1 	by dengzh 20180614 -->
+    <!-- 6  1.2.2 	by dengzh 20180625 -->
+    <!-- 7  1.2.3 	by dengzh 20180626 -->
+    <!-- 8  1.2.4 	by dengzh 20180627 -->
+    <!-- 9  1.2.5 	by dengzh 20180627 -->
+    <!-- 10  1.2.6 	by dengzh 20180702 -->
+    <!-- 11  1.2.7 	by dengzh 20180703 -->
+    <!-- 12  1.2.8 	by dengzh 20180703 -->
+    <!-- 13  1.2.9 	by dengzh 20180711 -->
+    <!-- 14  1.2.10 	by dengzh 20180716 -->
+    <!-- 15  1.2.11 	by dengzh 20180720 -->
+    <!-- 16  1.2.12 	by dengzh 20180729 -->
+    <!-- 17  1.2.13 	by dengzh 20180905 -->
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name="com.websharp.activity.user.ActivityLogin"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.websharp.activity.business.ActivityMain"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.websharp.activity.business.ActivityCustomerInfo"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.websharp.activity.business.ActivityCustomerUserInfo"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.websharp.activity.business.ActivitySearchCustomerInfo"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.websharp.activity.business.ActivityNotice"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.websharp.activity.business.ActivityNoticeContent"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.websharp.activity.qr.CaptureActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.websharp.activity.list.ActivityYbjdd"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.websharp.activity.list.ActivityWbjdd"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.websharp.activity.list.ActivityAccountInfo"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.websharp.activity.list.ActivityCzjl"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.websharp.activity.list.ActivityDbjl"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.websharp.activity.list.ActivityXfzd"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.websharp.activity.list.ActivityDdDetail"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.websharp.activity.business.ActivityCustomerListSearch"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.websharp.activity.business.ActivityWorkLog"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.websharp.activity.business.ActivityZlcx"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.websharp.activity.business.ActivityPaymentInfo"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.websharp.activity.business.ActivityPaymentWechat"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.websharp.activity.business.ActivityPaymentAlibaba"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.websharp.activity.business.ActivityPayOrder"
+            android:label="@string/app_name" 
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        
+         <activity
+            android:name="com.websharp.activity.user.ActivityUpdatePassword"
+            android:label="@string/app_name" >
+        </activity>
+    </application>
+
+</manifest>

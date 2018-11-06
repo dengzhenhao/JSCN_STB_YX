@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/id_switch_tab_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/tab_dg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:paddingTop="10dip" >
+
+                    <TextView
+                        android:id="@+id/tv_tab_dg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="订购产品/套餐"
+                        android:textSize="13dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab_gh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:paddingTop="10dip"
+                    android:saveEnabled="false" >
+
+                    <TextView
+                        android:id="@+id/tv_tab_gh"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="更换设备"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="13dip" />
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/tab_ye"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:paddingTop="10dip"
+                    android:saveEnabled="false" >
+
+                    <TextView
+                        android:id="@+id/tv_tab_ye"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="余额查询"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="13dip" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/id_tab_line_iv"
+                android:layout_width="200dp"
+                android:layout_height="2dip"
+                android:background="@color/color_system"
+                android:contentDescription="tab" >
+            </ImageView>
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/id_page_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+</RelativeLayout>

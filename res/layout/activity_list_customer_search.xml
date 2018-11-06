@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:websharp="http://schemas.android.com/apk/res/com.websharp.stb"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg_common"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/widget_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10" >
+
+            <EditText
+                android:id="@+id/et_search_keyword_name "
+                android:layout_width="fill_parent"
+                android:layout_height="36dip"
+                android:background="@drawable/shape_list_item_common"
+                android:hint="姓名"
+                android:maxLength="30"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:saveEnabled="true"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textColorHint="#e0e0e0"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_weight="10" >
+
+            <EditText
+                android:id="@+id/et_search_keyword_cust_cert"
+                android:layout_width="fill_parent"
+                android:layout_height="36dip"
+                android:background="@drawable/shape_list_item_common"
+                android:hint="身份证号"
+                android:maxLength="30"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:saveEnabled="true"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textColorHint="#e0e0e0"
+                android:textSize="16sp" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_weight="10" >
+
+            <EditText
+                android:id="@+id/et_search_keyword_cust_code"
+                android:layout_width="fill_parent"
+                android:layout_height="36dip"
+                android:background="@drawable/shape_list_item_common"
+                android:hint="客户证号"
+                android:maxLength="30"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:saveEnabled="true"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textColorHint="#e0e0e0"
+                android:textSize="16sp" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_weight="10" >
+
+            <EditText
+                android:id="@+id/et_search_keyword_cust_address"
+                android:layout_width="fill_parent"
+                android:layout_height="36dip"
+                android:background="@drawable/shape_list_item_common"
+                android:hint="地址"
+                android:maxLength="30"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:saveEnabled="true"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textColorHint="#e0e0e0"
+                android:textSize="16sp" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:layout_weight="10" >
+
+            <EditText
+                android:id="@+id/et_search_keyword_cust_mobile"
+                android:layout_width="fill_parent"
+                android:layout_height="36dip"
+                android:background="@drawable/shape_list_item_common"
+                android:hint="手机号"
+                android:maxLength="30"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:saveEnabled="true"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@android:color/black"
+                android:textColorHint="#e0e0e0"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/bg_btn_system"
+        android:gravity="center"
+        android:text="查询"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/textsize_common_btn_big" >
+    </Button>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dip"
+        android:background="@drawable/bg_detail"
+        android:orientation="vertical"
+        android:padding="5dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_common_item"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/TextView_Layout_Detail_Title"
+                android:layout_weight="5"
+                android:text="客户证号" />
+
+            <TextView style="@style/TextView_Layout_Detail_Split" />
+
+            <TextView
+                style="@style/TextView_Layout_Detail_Title"
+                android:layout_weight="3"
+                android:text="名称" />
+
+            <TextView style="@style/TextView_Layout_Detail_Split" />
+
+            <TextView
+                style="@style/TextView_Layout_Detail_Title"
+                android:layout_weight="5"
+                android:text="地址" />
+        </LinearLayout>
+
+        <com.websharp.widget.PullRefreshListView
+            android:id="@+id/lv_info"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:dividerHeight="0dip"
+            android:drawSelectorOnTop="false"
+            android:fadingEdgeLength="0.0sp"
+            android:fastScrollEnabled="false"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"
+            websharp:show_more_head="false" />
+    </LinearLayout>
+
+</LinearLayout>

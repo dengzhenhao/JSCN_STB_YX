@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">江苏有线宜兴分公司移动BOSS</string>
+    <string name="action_settings">action_settings</string>
+    <string name="app_versionName">1.2.13</string>
+    <string name="title_qr_scan">设备号条形码扫描</string>
+    <!-- 标题 --> 
+
+    <string name="format_date_short">yyyy年MM月dd日</string>
+
+    <!-- 下拉刷新 -->
+    <string name="title_pulltorefresh_get_more">加载更多</string>
+    <string name="msg_no_result">没有搜索到相关信息</string>
+    <!-- 下拉刷新 -->
+
+
+    <!-- 提示 -->
+    <string name="msg_dialog_options">请选择</string>
+    <string name="msg_dialog_title">提示</string>
+    <string name="msg_dialog_confirm">确定</string>
+    <string name="msg_dialog_cancel">取消</string>
+    <string name="msg_confirm_control ">确认这个操作吗？</string>
+    <string name="msg_confirm_cancel">确认退出？</string>
+    <string name="msg_confirm_order_product">确认提交订单吗？</string>
+    <string name="msg_control_success">操作成功!</string>
+    <string name="msg_control_failed">操作失败!</string>
+    <string name="msg_dialog_role_failed">您没有权限进行此操作!</string>
+    <string name="msg_dialog_cancel_success">注销登录成功</string>
+    <string name="msg_dialog_unsignature">您还没有审批签字</string>
+    <string name="msg_dialog_notes_empty">审核意见不能为空</string>
+    <!-- 设置 -->
+    <string name="common_downloading">正在下载[%1$s%%]</string>
+    <string name="common_loading">正在进行操作...</string>
+    <string name="common_login_success">登录成功</string>
+    <string name="common_update_password_success">修改成功</string>
+    <string name="common_login_failed">登录失败,请检查用户或密码</string>
+    <string name="common_exit_repeat_press">再按一次退出应用程序</string>
+    <!-- 登录&注册 -->
+    <string name="hint_et_username">用户名</string>
+    <string name="hint_et_password">密　码</string>
+    <string name="title_label_login">登录</string>
+    <string name="title_label_regist">注册</string>
+    <string name="title_label_forget_pwd">忘记密码</string>
+    <string name="title_label_loginname">手机号</string>
+    <string name="title_label_password">密码</string>
+    <string name="title_label_password_confirm">确认密码</string>
+    <string name="title_label_verify_code">验证码</string>
+    <string name="msg_error_value_telephone">请正确输入手机号码</string>
+    <string name="msg_error_value_verify_code">请输入短信验证码</string>
+    <string name="msg_error_password">请输入密码</string>
+    <string name="msg_error_password_confirm">请输入确认密码</string>
+    <string name="msg_error_password_repeat">两次密码输入不一致,请重新输入!</string>
+    <string name="msg_error_regist_success">注册成功,现在返回登录界面!</string>
+    <!-- 其他 -->
+    <string name="lab_setting_login_name">登录名:%1$s</string>
+    <string name="lab_setting_user_name">用户名:%1$s</string>
+    <string name="lab_setting_user_telephone">电话:%1$s</string>
+    <!-- 按钮 -->
+    <string name="btn_confirm">确定</string>
+    <string name="btn_clear">清空</string>
+    <!-- 下拉刷新 -->
+    <string name="p2refresh_head_load_more">加载更多</string>
+    <string name="p2refresh_end_load_more">加载更多</string>
+    <string name="p2refresh_end_click_load_more">点击加载</string>
+    <string name="p2refresh_release_refresh">松开刷新</string>
+    <string name="p2refresh_pull_to_refresh">下拉刷新</string>
+    <string name="p2refresh_doing_head_refresh">正在刷新…</string>
+    <string name="p2refresh_doing_end_refresh">加载中…</string>
+    <string name="p2refresh_refresh_lasttime">最近更新 : </string>
+    <string name="msg_load_failed">加载失败</string>
+
+    <string-array name="arr_change_reason">
+        <item>软件问题（无法升级、菜单不全、软件版本问题）</item>
+        <item>无电源（前面板指示灯不亮）</item>
+        <item>跳电（放段时间后突然无电源）</item>
+        <item>无信号（前面板信号灯不亮）</item>
+        <item>无音视频（无高清视频、无AV视频、无声音）</item>
+        <item>配对授权（未配对、无法授权）</item>
+        <item>不读卡（智能卡通讯错误）</item>
+        <item>死机（视频画面声音卡顿、图像不动、按键遥控无反应）</item>
+        <item>马赛克（画面出现格子、图花、声音重叠）</item>
+        <item>双向故障（前面板上下行在线、网口灯都不亮、网络连接不上）</item>
+        <item>无线问题（面板无线指示灯不亮、无WIFI信号、近距离信号差）</item>
+        <item>少台（缺频点、节目收不全）</item>
+        <item>外观（机身外观、颜色）</item>
+    </string-array>
+    <string-array name="arr_clean_level">
+        <item>好</item>
+        <item>中</item>
+        <item>差</item>
+    </string-array>
+
+</resources>

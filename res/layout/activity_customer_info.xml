@@ -1,0 +1,299 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg_common" >
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/widget_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_title"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="100"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dip" >
+
+                <fragment
+                    android:id="@+id/frag_customer_base_info"
+                    android:name="com.websharp.activity.fragment.FragmentCustomerBaseInfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <fragment
+                    android:id="@+id/frag_customer_user_list"
+                    android:name="com.websharp.activity.fragment.FragmentCustomerUserList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip" />
+                
+                <fragment
+                    android:id="@+id/frag_customer_user_list_preinstall"
+                    android:name="com.websharp.activity.fragment.FragmentCustomerUserList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="25dip"
+                    android:layout_marginTop="10dip" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip" 
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/layout_ybjdd"
+                    android:layout_width="0dip"
+                    android:layout_height="45dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_system"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:tag="已办结订单" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="35dip"
+                            android:layout_height="35dip"
+                            android:padding="8dip"
+                            android:src="@drawable/icon_btn_ybj_order" />
+
+                        <TextView
+                            android:layout_width="65dip"
+                            android:layout_height="35dip"
+                            android:gravity="center"
+                            android:text="已办结\n订单"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/textsize_common_btn_big" >
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_wbjdd"
+                    android:layout_width="0dip"
+                    android:layout_height="45dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_system"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:tag="未办结订单" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="35dip"
+                            android:layout_height="35dip"
+                            android:padding="8dip"
+                            android:src="@drawable/icon_btn_wbj_order" />
+
+                        <TextView
+                            android:layout_width="65dip"
+                            android:layout_height="35dip"
+                            android:gravity="center"
+                            android:text="未办结\n订单"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/textsize_common_btn_big" >
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_zhxx"
+                    android:layout_width="0dip"
+                    android:layout_height="45dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_system"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:tag="帐户信息" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="35dip"
+                            android:layout_height="35dip"
+                            android:padding="8dip"
+                            android:src="@drawable/icon_btn_account_book" />
+
+                        <TextView
+                            android:layout_width="65dip"
+                            android:layout_height="35dip"
+                            android:gravity="center"
+                            android:text="帐户信息"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/textsize_common_btn_big" >
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/layout_czjl"
+                    android:layout_width="0dip"
+                    android:layout_height="45dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_system"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:tag="充值记录" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="35dip"
+                            android:layout_height="35dip"
+                            android:padding="8dip"
+                            android:src="@drawable/icon_btn_pay_history" />
+
+                        <TextView
+                            android:layout_width="65dip"
+                            android:layout_height="35dip"
+                            android:gravity="center"
+                            android:text="充值记录"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/textsize_common_btn_big" >
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:id="@+id/layout_dbjl"
+                    android:layout_width="0dip"
+                    android:layout_height="45dip"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dip"
+                    android:background="@drawable/bg_btn_system"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:tag="点播记录" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="35dip"
+                            android:layout_height="35dip"
+                            android:padding="8dip"
+                            android:src="@drawable/icon_btn_play_history" />
+
+                        <TextView
+                            android:layout_width="65dip"
+                            android:layout_height="35dip"
+                            android:gravity="center"
+                            android:text="点播记录"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/textsize_common_btn_big" >
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_xfzd"
+                    android:layout_width="0dip"
+                    android:layout_height="45dip"
+                    android:layout_marginLeft="10dip"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_system"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:tag="消费帐单" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="35dip"
+                            android:layout_height="35dip"
+                            android:padding="8dip"
+                            android:src="@drawable/icon_btn_expense_history" />
+
+                        <TextView
+                            android:layout_width="65dip"
+                            android:layout_height="35dip"
+                            android:gravity="center"
+                            android:text="消费帐单"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/textsize_common_btn_big" >
+                        </TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+               
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="gone" >
+    </FrameLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

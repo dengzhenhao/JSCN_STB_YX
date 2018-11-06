@@ -1,0 +1,189 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg_common" >
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/widget_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_title"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dip"
+            android:layout_weight="100"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/layout_title"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/height_common_title"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="30dip"
+                            android:layout_height="30dip"
+                            android:padding="6dip"
+                            android:src="@drawable/icon_person" />
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:text=""
+                            android:textColor="@color/color_text_title"
+                            android:textSize="@dimen/textsize_layout_detail_title" />
+                    </LinearLayout>
+
+                    <fragment
+                        android:id="@+id/frag_customer_user_info_page"
+                        android:name="com.websharp.activity.fragment.FragmentWorkorderPage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/layout_order_product"
+                android:layout_width="0dip"
+                android:layout_height="45dip"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn_system"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:tag="产品订购" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/iv_order_product"
+                        android:layout_width="35dip"
+                        android:layout_height="35dip"
+                        android:padding="8dip"
+                        android:src="@drawable/icon_btn_cpdg" />
+
+                    <TextView
+                        android:layout_width="65dip"
+                        android:layout_height="35dip"
+                        android:gravity="center"
+                        android:text="产品订购"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/textsize_common_btn_big" >
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_change_device"
+                android:layout_width="0dip"
+                android:layout_height="45dip"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn_system"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:tag="设备换机" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/iv_change_device"
+                        android:layout_width="35dip"
+                        android:layout_height="35dip"
+                        android:padding="8dip"
+                        android:src="@drawable/icon_btn_sbhj" />
+
+                    <TextView
+                        android:layout_width="65dip"
+                        android:layout_height="35dip"
+                        android:gravity="center"
+                        android:text="设备换机"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/textsize_common_btn_big" >
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_send_auth"
+                android:layout_width="0dip"
+                android:layout_height="45dip"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:background="@drawable/bg_btn_system"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:tag="发送授权" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/iv_send_auth"
+                        android:layout_width="35dip"
+                        android:layout_height="35dip"
+                        android:padding="8dip"
+                        android:src="@drawable/icon_btn_fssq" />
+
+                    <TextView
+                        android:layout_width="65dip"
+                        android:layout_height="35dip"
+                        android:gravity="center"
+                        android:text="发送授权"
+                        android:textColor="@android:color/white"
+                        android:textSize="@dimen/textsize_common_btn_big" >
+                    </TextView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="gone" >
+    </FrameLayout>
+
+</RelativeLayout>

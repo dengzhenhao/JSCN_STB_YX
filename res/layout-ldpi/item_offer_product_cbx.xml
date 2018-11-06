@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_order_outer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_common_layout_trans"
+        android:gravity="center"
+        android:minHeight="@dimen/height_common_item"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/cbx_product_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:focusable="false" />
+
+        <TextView
+            android:id="@+id/tv_product_name"
+            style="@style/TextView_Layout_Detail_Item"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="100"
+            android:gravity="center_vertical|left"
+            android:text="3333" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_border" >
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="@dimen/height_common_item"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_stb_no"
+            style="@style/TextView_Layout_Detail_Item"
+            android:layout_weight="4"
+            android:text="5" />
+
+        <TextView style="@style/TextView_Layout_Detail_Split" />
+
+        <TextView
+            android:id="@+id/tv_start_time"
+            style="@style/TextView_Layout_Detail_Item"
+            android:layout_weight="3"
+            android:text="3333" />
+        
+        <TextView style="@style/TextView_Layout_Detail_Split" />
+
+
+        <TextView
+            android:id="@+id/tv_charge1"
+            style="@style/TextView_Layout_Detail_Item"
+            android:layout_weight="3"
+            android:text="3333" />
+
+        <TextView style="@style/TextView_Layout_Detail_Split" />
+
+        <TextView
+            android:id="@+id/tv_film_name"
+            style="@style/TextView_Layout_Detail_Item"
+            android:layout_weight="3"
+            android:text="3333" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:background="@drawable/bg_detail"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_common_item"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="点播详情"
+                    android:textColor="@color/color_system"
+                    android:textSize="@dimen/textsize_title" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_common_item"
+                android:gravity="center"
+                android:visibility="gone" 
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/TextView_Layout_Detail_Title"
+                    android:layout_weight="2"
+                    android:text="名称" />
+
+                <TextView style="@style/TextView_Layout_Detail_Split" />
+
+                <TextView
+                    style="@style/TextView_Layout_Detail_Title"
+                    android:layout_weight="4"
+                    android:text="内容" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_resource_detail_contaimer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_border" >
+    </LinearLayout>
+
+</LinearLayout>

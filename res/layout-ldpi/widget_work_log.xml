@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:websharp="http://schemas.android.com/apk/res/com.websharp.stb"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg_common"
+    android:orientation="vertical" >
+
+    <com.websharp.widget.PullRefreshListView
+        android:id="@+id/lv_info"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@null"
+        android:dividerHeight="0dip"
+        android:drawSelectorOnTop="false"
+        android:fadingEdgeLength="0.0sp"
+        android:fastScrollEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        websharp:show_more_head="false" />
+
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_common_layout_trans"
+        android:gravity="center"
+        android:minHeight="@dimen/height_common_item"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_amount"
+            style="@style/TextView_Layout_Detail_Item"
+            android:layout_weight="1"
+            android:text="5" />
+
+        <TextView style="@style/TextView_Layout_Detail_Split" />
+
+        <TextView
+            android:id="@+id/tv_payment_date"
+            style="@style/TextView_Layout_Detail_Item"
+            android:layout_weight="1"
+            android:text="5" />
+
+        <TextView style="@style/TextView_Layout_Detail_Split" />
+
+        <TextView
+            android:id="@+id/tv_operation_type"
+            style="@style/TextView_Layout_Detail_Item"
+            android:layout_weight="1"
+            android:text="3333" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:background="@drawable/bg_detail2"
+        android:clickable="false"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_common_item"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/TextView_Layout_Detail_Title"
+                    android:layout_weight="2"
+                    android:text="名称" />
+
+                <TextView style="@style/TextView_Layout_Detail_Split" />
+
+                <TextView
+                    style="@style/TextView_Layout_Detail_Title"
+                    android:layout_weight="2"
+                    android:text="内容" />
+            </LinearLayout>
+
+            <!-- 订购信息列表 -->
+
+            <LinearLayout
+                android:id="@+id/layout_order_info_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <!-- 资源信息列表 -->
+
+            <LinearLayout
+                android:id="@+id/layout_resource_info_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_border" >
+    </LinearLayout>
+
+</LinearLayout>

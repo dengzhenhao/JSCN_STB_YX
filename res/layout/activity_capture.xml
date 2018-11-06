@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/capture_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:id="@+id/capture_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:id="@+id/capture_crop_view"
+            android:layout_width="230dip"
+            android:layout_height="230dip"
+            android:layout_centerInParent="true"
+            android:background="@drawable/scan_focus"
+            android:padding="0dip" >
+
+            <LinearLayout
+                android:id="@+id/capture_scan_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:layout_alignParentTop="true"
+                android:background="#3388ff"
+                android:orientation="horizontal" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/capture_restart_scan"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#66ffcc00"
+        android:gravity="center"
+        android:text="restart scan"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/capture_scan_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/capture_restart_scan"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Scanning..."
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/text_tips"
+        android:layout_width="match_parent"
+        android:layout_height="70dip"
+        android:layout_alignParentBottom="true"
+        android:background="#90000000"
+        android:gravity="center"
+        android:text="请将摄像头对准二维码/条形码扫描"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/textsize_layout_detail_title" />
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/widget_title" />
+
+</RelativeLayout>

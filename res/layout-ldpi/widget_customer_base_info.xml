@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_detail"
+    android:orientation="vertical"
+    android:paddingBottom="5dip" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_common_title"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_detail_top"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="2.5dip"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="7dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="7dip"
+            android:background="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="基本信息"
+            android:layout_marginLeft="10dip"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/height_common_item"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/TextView_Common_Label"
+                android:text="客户证号：" />
+
+            <TextView
+                android:id="@+id/tv_customer_num"
+                style="@style/TextView_Common_Value"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_border" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/height_common_item"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/TextView_Common_Label"
+                android:text="客户名称：" />
+
+            <TextView
+                android:id="@+id/tv_username"
+                style="@style/TextView_Common_Value"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_border" >
+        </LinearLayout>
+
+        <!-- 2 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/height_common_item"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/TextView_Common_Label"
+                android:text="客户属性：" />
+
+            <TextView
+                android:id="@+id/tv_customer_attr"
+                style="@style/TextView_Common_Value"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_border" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/height_common_item"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/TextView_Common_Label"
+                android:text="客户状态：" />
+
+            <TextView
+                android:id="@+id/tv_customer_status"
+                style="@style/TextView_Common_Value"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_border" >
+        </LinearLayout>
+
+        <!-- 4 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/height_common_item"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/TextView_Common_Label"
+                android:text="客户类型：" />
+
+            <TextView
+                android:id="@+id/tv_customer_type"
+                style="@style/TextView_Common_Value"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_border" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/height_common_item"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/TextView_Common_Label"
+                android:text="客户级别：" />
+
+            <TextView
+                android:id="@+id/tv_customer_level"
+                style="@style/TextView_Common_Value"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_border" >
+        </LinearLayout>
+
+        <!-- 5 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/height_common_item"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/TextView_Common_Label"
+                android:text="开户日期：" />
+
+            <TextView
+                android:id="@+id/tv_create_date"
+                style="@style/TextView_Common_Value"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_border" >
+        </LinearLayout>
+
+        <!-- 6 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/height_common_item"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/TextView_Common_Label"
+                android:text="开户营业厅：" />
+
+            <TextView
+                android:id="@+id/tv_account_bussiness_lobby"
+                style="@style/TextView_Common_Value"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_border" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/height_common_item"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/TextView_Common_Label"
+                android:text="开户营业员：" />
+
+            <TextView
+                android:id="@+id/tv_account_bussiness_staff"
+                style="@style/TextView_Common_Value"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_border" >
+        </LinearLayout>
+        
+        
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/height_common_item"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/TextView_Common_Label"
+                android:text="支付方式：" />
+
+            <TextView
+                android:id="@+id/tv_payment_method"
+                style="@style/TextView_Common_Value"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_border" >
+        </LinearLayout>
+        <!-- 7 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/height_common_item"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/TextView_Common_Label"
+                android:text="归属分公司：" />
+
+            <TextView
+                android:id="@+id/tv_company_belong"
+                style="@style/TextView_Common_Value"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_border" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/height_common_item"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/TextView_Common_Label"
+                android:text="联系人名称：" />
+
+            <TextView
+                android:id="@+id/tv_contact_name"
+                style="@style/TextView_Common_Value"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_border" >
+        </LinearLayout>
+
+        <!-- 8 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/height_common_item"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/TextView_Common_Label"
+                android:text="联系方式：" />
+
+            <TextView
+                android:id="@+id/tv_default_contact_info"
+                style="@style/TextView_Common_Value"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_border" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/height_common_item"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/TextView_Common_Label"
+                android:text="移动电话：" />
+
+            <TextView
+                android:id="@+id/tv_customer_mobile"
+                style="@style/TextView_Common_Value"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_border" >
+        </LinearLayout>
+
+        <!-- 3 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/height_common_item"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/TextView_Common_Label"
+                android:text="证件类型：" />
+
+            <TextView
+                android:id="@+id/tv_id_type"
+                style="@style/TextView_Common_Value"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_border" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/height_common_item"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/TextView_Common_Label"
+                android:text="证件号码：" />
+
+            <TextView
+                android:id="@+id/tv_id_num"
+                style="@style/TextView_Common_Value"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_border" >
+        </LinearLayout>
+
+        <!-- 10 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/height_common_item"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/TextView_Common_Label"
+                android:text="联系地址：" />
+
+            <TextView
+                android:id="@+id/tv_id_address"
+                style="@style/TextView_Common_Value"
+                android:singleLine="false"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_border" >
+        </LinearLayout>
+
+        <!-- 11 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/height_common_item"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/TextView_Common_Label"
+                android:text="备注信息：" />
+
+            <TextView
+                android:id="@+id/tv_remark"
+                style="@style/TextView_Common_Value"
+                android:singleLine="false"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

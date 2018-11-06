@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <color name="color_yellow">#ff8100</color> 
+    <color name="color_system">#1838A7</color>
+    <color name="color_split">#cecece</color>
+    <color name="color_system_bg">#f9f9f9</color>
+    <color name="color_757575">#757575</color>
+    <color name="color_border">#cacaca</color>
+    <color name="color_f2f2f2">#f2f2f2</color>
+    <color name="color_bg_common">#f9f9f9</color>
+    <color name="color_text_title">#535353</color>
+
+    <drawable name="drawable_system">#035EB1</drawable>
+    <drawable name="trans">#00000000</drawable>
+    <drawable name="drawable_bg_order_list">#eaeef1</drawable>
+    <drawable name="drawable_layout_press_down_2">#44000000</drawable>
+    <drawable name="drawable_layout_press_down">#aa000000</drawable>
+    <drawable name="white">#ffffff</drawable>
+
+</resources>

@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_detail"
+    android:orientation="vertical"
+    android:paddingBottom="5dip" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_common_title"
+        android:background="@drawable/bg_detail_top"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="2.5dip"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="7dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="7dip"
+            android:background="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="订单详情"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_title" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/height_common_item"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/TextView_Payment_Info_Label"
+                android:text="套餐名称：" />
+
+            <TextView
+                android:id="@+id/tv_order_new_package"
+                style="@style/TextView_Payment_Info_Value"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_border" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/height_common_item"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/TextView_Payment_Info_Label"
+                android:text="产品名称：" />
+
+            <TextView
+                android:id="@+id/tv_order_new_product"
+                style="@style/TextView_Payment_Info_Value"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_border" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/height_common_item"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/TextView_Payment_Info_Label"
+                android:text="支付状态：" />
+
+            <TextView
+                android:id="@+id/tv_order_pay_status"
+                style="@style/TextView_Payment_Info_Value"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_border" >
+        </LinearLayout>
+
+        <!-- 8 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/height_common_item"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/TextView_Payment_Info_Label"
+                android:text="订单金额：" />
+
+            <EditText
+                android:id="@+id/et_order_pay_amount"
+                style="@style/TextView_Payment_Info_Value"
+                android:inputType="numberDecimal"
+                android:text=""
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_order_pay_amount"
+                style="@style/TextView_Payment_Info_Value"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_border" >
+        </LinearLayout>
+
+        <!-- 2 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/height_common_item"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/TextView_Payment_Info_Label"
+                android:text="生效日期：" />
+
+            <TextView
+                android:id="@+id/tv_effective_time"
+                style="@style/TextView_Payment_Info_Value"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_border" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/height_common_item"
+            android:orientation="horizontal" 
+            android:visibility="gone">
+
+            <TextView
+                style="@style/TextView_Payment_Info_Label"
+                android:text="失效日期：" />
+
+            <TextView
+                android:id="@+id/tv_expire_time"
+                style="@style/TextView_Payment_Info_Value"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_border" >
+        </LinearLayout>
+        <!-- 4 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/height_common_item"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/TextView_Payment_Info_Label"
+                android:text="客户名称：" />
+
+            <TextView
+                android:id="@+id/tv_username"
+                style="@style/TextView_Payment_Info_Value"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_border" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/height_common_item"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/TextView_Payment_Info_Label"
+                android:text="客户属性：" />
+
+            <TextView
+                android:id="@+id/tv_customer_attr"
+                style="@style/TextView_Payment_Info_Value"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_border" >
+        </LinearLayout>
+
+        <!-- 5 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/height_common_item"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/TextView_Payment_Info_Label"
+                android:text="客户级别：" />
+
+            <TextView
+                android:id="@+id/tv_customer_level"
+                style="@style/TextView_Payment_Info_Value"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_border" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/height_common_item"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/TextView_Payment_Info_Label"
+                android:text="设备编号：" />
+
+            <TextView
+                android:id="@+id/tv_device_num"
+                style="@style/TextView_Payment_Info_Value"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_border" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/height_common_item"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/TextView_Payment_Info_Label"
+                android:text="客户证号：" />
+
+            <TextView
+                android:id="@+id/tv_customer_num"
+                style="@style/TextView_Payment_Info_Value"
+                android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/color_border" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="@dimen/height_common_item"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/TextView_Payment_Info_Label"
+                android:text="联系方式：" />
+
+            <TextView
+                android:id="@+id/tv_default_contact_info"
+                style="@style/TextView_Payment_Info_Value"
+                android:text="" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

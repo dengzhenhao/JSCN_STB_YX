@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg_common" >
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/widget_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_pay_line"
+        android:layout_below="@+id/layout_title"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dip" >
+
+                <fragment
+                    android:id="@+id/frag_payment_info"
+                    android:name="com.websharp.activity.fragment.FragmentPaymentInfo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_free_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_system"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="65dip"
+                android:layout_height="35dip"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textsize_common_btn_big" >
+            </TextView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_pay_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_pay"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="5dip"
+        android:visibility="visible" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_centerVertical="true"
+            android:background="#999999" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/color_bg_common"
+            android:padding="5dip"
+            android:text="支付方式" />
+    </RelativeLayout>
+
+    <LinearLayout 
+        android:id="@+id/layout_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dip"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/iv_pay_wechat"
+            android:layout_width="0dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="1"
+            android:src="@drawable/icon_pay_wechat_0" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/iv_pay_alibaba"
+            android:layout_width="0dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="5dip"
+            android:layout_weight="1"
+            android:src="@drawable/icon_pay_alibaba_0" >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/iv_pay_cash"
+            android:layout_width="0dip"
+            android:layout_height="50dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_weight="1"
+            android:src="@drawable/icon_pay_cash_0" >
+        </ImageView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="gone" >
+    </FrameLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

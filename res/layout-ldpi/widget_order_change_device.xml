@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/drawable_layout_press_down"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:background="@drawable/border_white_radius5"
+        android:clickable="true" >
+
+        <LinearLayout
+            android:id="@+id/layout_title"
+            android:layout_width="match_parent"
+            android:layout_height="35dip"
+            android:background="@drawable/bg_blue_radius_top_2"
+            android:gravity="center" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设备换机"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layout_title"
+            android:orientation="vertical"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="5dip" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="2"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_common_item"
+                    android:gravity="center_vertical"
+                    android:text="旧机顶盒号"
+                    android:textColor="@color/color_system"
+                    android:textSize="@dimen/textsize_title" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_common_title" >
+
+                    <TextView
+                        android:id="@+id/tv_old_device_num"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shape_list_item_common"
+                        android:gravity="center_vertical"
+                        android:maxLength="30"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="5dip"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="2"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_common_item"
+                    android:gravity="center_vertical"
+                    android:text="新机顶盒号"
+                    android:textColor="@color/color_system"
+                    android:textSize="@dimen/textsize_title" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_common_title"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/et_device_num"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="100"
+                        android:background="@drawable/shape_list_item_common"
+                        android:maxLength="30"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="5dip"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/btn_qr"
+                        android:layout_width="@dimen/height_common_item"
+                        android:layout_height="@dimen/height_common_item"
+                        android:layout_marginLeft="20dip"
+                        android:layout_weight="1"
+                        android:src="@drawable/icon_qr" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="2"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_common_item"
+                    android:gravity="center_vertical"
+                    android:text="变更类型"
+                    android:textColor="@color/color_system"
+                    android:textSize="@dimen/textsize_title" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_common_title" >
+
+                    <RadioGroup
+                        android:id="@+id/rg_change_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="变更类型"
+                        android:orientation="horizontal" >
+
+                        <RadioButton
+                            android:id="@+id/radio_change"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:tag="change"
+                            android:text="置换" >
+                        </RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/radio_repair"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="repair"
+                            android:text="维修" >
+                        </RadioButton>
+                    </RadioGroup>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_reason_repair"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="3"
+                android:visibility="gone"
+                android:orientation="vertical" >
+                
+                 <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:visibility="visible" 
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tv_year"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="清洁等级:"
+                        android:textColor="@color/color_system"
+                        android:textSize="@dimen/textsize_title" />
+
+                    <Spinner
+                        android:id="@+id/sp_clean_level"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/tv_year"
+                        android:background="@drawable/bg_detail"
+                        android:gravity="center"
+                        android:paddingLeft="20dip"
+                        android:paddingRight="20dip"
+                        android:textAlignment="center"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:layout_width="10dip"
+                        android:layout_height="10dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="3dip"
+                        android:layout_marginRight="10dip"
+                        android:background="@drawable/icon_arrow_down" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:visibility="visible"
+                    android:layout_weight="2"
+                    android:layout_marginTop="5dip"  >
+
+                    <TextView
+                        android:id="@+id/tv_year"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="故障原因:"
+                        android:textColor="@color/color_system"
+                        android:textSize="@dimen/textsize_title" />
+
+                    <Spinner
+                        android:id="@+id/sp_reason_change"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@+id/tv_year"
+                        android:background="@drawable/bg_detail"
+                        android:gravity="center"
+                        android:paddingLeft="20dip"
+                        android:paddingRight="20dip"
+                        android:textAlignment="center"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:layout_width="10dip"
+                        android:layout_height="10dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="3dip"
+                        android:layout_marginRight="10dip"
+                        android:background="@drawable/icon_arrow_down" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_reason_change"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="3"
+                android:orientation="vertical" 
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_common_item"
+                    android:gravity="center_vertical"
+                    android:text="备注"
+                    android:textColor="@color/color_system"
+                    android:textSize="@dimen/textsize_title" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:id="@+id/et_reason_change"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border_white_radius5"
+                        android:gravity="left|top"
+                        android:maxLines="3"
+                        android:minLines="3"
+                        android:padding="10dip"
+                        android:singleLine="false"
+                        android:text=""
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/height_common_item"
+                    android:gravity="center_vertical"
+                    android:text="更换日期"
+                    android:textColor="@color/color_system"
+                    android:textSize="@dimen/textsize_layout_detail_title" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_common_title" >
+
+                    <TextView
+                        android:id="@+id/tv_change_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/border_white_radius5"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dip"
+                        android:text=""
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="10dip"
+                        android:layout_height="10dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginBottom="3dip"
+                        android:layout_marginRight="10dip"
+                        android:background="@drawable/icon_arrow_down" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_order_change_device"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dip"
+                    android:background="@drawable/bg_btn_system"
+                    android:gravity="center"
+                    android:text="确认换机"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/textsize_common_btn_big" >
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

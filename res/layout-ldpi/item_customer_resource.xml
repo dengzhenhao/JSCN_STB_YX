@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_resource_outer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_common_layout_trans"
+        android:gravity="center"
+        android:minHeight="@dimen/height_common_item"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_resource_name"
+            style="@style/TextView_Layout_Detail_Item"
+            android:layout_weight="4"
+            android:text="333" />
+
+        <TextView style="@style/TextView_Layout_Detail_Split" />
+
+        <TextView
+            android:id="@+id/tv_resource_code"
+            style="@style/TextView_Layout_Detail_Item"
+            android:layout_weight="2"
+            android:text="5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dip"
+        android:background="@drawable/bg_detail2"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_common_item"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="资源详情"
+                    android:textColor="@color/color_system"
+                    android:textSize="@dimen/textsize_title" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_common_item"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/TextView_Layout_Detail_Title"
+                    android:layout_weight="2"
+                    android:text="名称" />
+
+                <TextView style="@style/TextView_Layout_Detail_Split" />
+
+                <TextView
+                    style="@style/TextView_Layout_Detail_Title"
+                    android:layout_weight="4"
+                    android:text="内容" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_resource_detail_contaimer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_split"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_border"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+</LinearLayout>

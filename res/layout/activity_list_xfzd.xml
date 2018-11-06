@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:websharp="http://schemas.android.com/apk/res/com.websharp.stb"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg_common"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/layout_title"
+        layout="@layout/widget_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dip"
+        android:background="@drawable/bg_detail"
+        android:orientation="vertical" 
+        android:padding="5dip">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="@dimen/height_common_title"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="选择年度:"
+                    android:textColor="@color/color_system"
+                    android:textSize="@dimen/textsize_title" />
+
+                <Spinner
+                    android:id="@+id/sp_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toRightOf="@+id/tv_year"
+                android:background="@drawable/bg_detail"
+                    android:gravity="center"
+                    android:paddingLeft="10dip"
+                    android:textAlignment="center"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:layout_width="10dip"
+                    android:layout_height="10dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="3dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/icon_arrow_down" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="@dimen/height_common_title"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tv_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="月份:"
+                    android:layout_marginLeft="10dip"
+                    android:textColor="@color/color_system"
+                    android:textSize="@dimen/textsize_title" />
+
+                <Spinner
+                    android:id="@+id/sp_month"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toRightOf="@+id/tv_month"
+                android:background="@drawable/bg_detail"
+                    android:gravity="center"
+                    android:paddingLeft="10dip"
+                    android:textAlignment="center"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:layout_width="10dip"
+                    android:layout_height="10dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="3dip"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/icon_arrow_down" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:minHeight="@dimen/height_common_item"
+            android:gravity="center"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal" >
+
+            <TextView 
+                style="@style/TextView_Layout_Detail_Title"
+                android:layout_weight="3"
+               
+                android:text="帐单科目" />
+
+            <TextView style="@style/TextView_Layout_Detail_Split" />
+
+            <TextView
+                style="@style/TextView_Layout_Detail_Title"
+                android:layout_weight="2"
+                android:text="帐单金额" />
+            
+            <TextView style="@style/TextView_Layout_Detail_Split" />
+
+            <TextView
+                style="@style/TextView_Layout_Detail_Title"
+                android:layout_weight="2"
+                android:text="费帐期" />
+            
+            <TextView style="@style/TextView_Layout_Detail_Split" />
+
+            <TextView
+                style="@style/TextView_Layout_Detail_Title"
+                android:layout_weight="2"
+                android:text="未销金额" />
+            
+            <TextView style="@style/TextView_Layout_Detail_Split" />
+
+            <TextView
+                style="@style/TextView_Layout_Detail_Title"
+                android:layout_weight="2"
+                android:text="已结清" />
+        </LinearLayout>
+
+        <com.websharp.widget.PullRefreshListView
+            android:id="@+id/lv_info"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:dividerHeight="0dip"
+            android:drawSelectorOnTop="false"
+            android:fadingEdgeLength="0.0sp"
+            android:fastScrollEnabled="false"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none"
+            websharp:show_more_head="false" />
+    </LinearLayout>
+
+</LinearLayout>

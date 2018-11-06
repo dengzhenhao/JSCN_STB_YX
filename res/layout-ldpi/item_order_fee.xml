@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_common_layout_trans"
+        android:gravity="center"
+        android:minHeight="@dimen/height_common_item"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_price_plan_name"
+            style="@style/TextView_Layout_Detail_Item"
+            android:layout_weight="3"
+            android:text="5" />
+
+        <TextView style="@style/TextView_Layout_Detail_Split" />
+
+        <TextView
+            android:id="@+id/tv_should_money"
+            style="@style/TextView_Layout_Detail_Item"
+            android:layout_weight="2"
+            android:text="3333" />
+
+        <TextView style="@style/TextView_Layout_Detail_Split" />
+
+        <TextView
+            android:id="@+id/tv_cut_money"
+            style="@style/TextView_Layout_Detail_Item"
+            android:layout_weight="2"
+            android:text="3333" />
+        
+          <TextView style="@style/TextView_Layout_Detail_Split" />
+
+        <TextView
+            android:id="@+id/tv_fact_money"
+            style="@style/TextView_Layout_Detail_Item"
+            android:layout_weight="2"
+            android:text="3333" />
+    </LinearLayout>
+    
+    
+
+    <LinearLayout
+        android:id="@+id/layout_split"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/color_border" >
+    </LinearLayout>
+
+</LinearLayout>
